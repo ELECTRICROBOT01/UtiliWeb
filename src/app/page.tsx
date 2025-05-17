@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function HomePage() {
   return (
     <div className="space-y-12">
-      <section className="text-center py-12 bg-accent/20 rounded-lg shadow-md">
+      <section className="text-center py-12 bg-accent/20 rounded-lg shadow-lg">
         <h1 className="text-5xl font-bold mb-4 text-foreground">Bienvenido a UtiliLab</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Explorando el Utilitarismo: La búsqueda de la mayor felicidad para el mayor número.
