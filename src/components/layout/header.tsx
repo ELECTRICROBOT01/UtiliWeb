@@ -11,10 +11,10 @@ export default function Header() {
           <span>UtiliLab</span>
         </Link>
         <nav className="space-x-2 sm:space-x-4">
-          <Button variant="ghost" asChild>
+          <Button variant="outline" asChild>
             <Link href="/">Inicio</Link>
           </Button>
-          <Button variant="ghost" asChild>
+          <Button variant="outline" asChild>
             <Link href="/merchandise">Merchandising</Link>
           </Button>
         </nav>
