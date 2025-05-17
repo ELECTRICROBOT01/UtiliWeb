@@ -58,13 +58,13 @@ export default function ProductPage({ params }: ProductPageProps) {
         </div>
         <div className="space-y-6">
           <Badge variant="secondary" className="text-sm">{product.category}</Badge>
-          <h1 className="text-4xl font-bold text-primary-foreground">{product.name}</h1>
+          <h1 className="text-4xl font-bold text-foreground">{product.name}</h1>
           <p className="text-3xl font-semibold text-accent-foreground">{product.price}</p>
           
           <Separator />
           
           <div className="prose prose-lg text-foreground/80">
-            <h2 className="text-xl font-semibold text-primary-foreground mb-2">Descripción del Producto</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-2">Descripción del Producto</h2>
             <p>{product.longDescription}</p>
           </div>
           

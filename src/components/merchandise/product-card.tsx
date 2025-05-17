@@ -25,7 +25,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
       </CardHeader>
       <CardContent className="p-6 flex-grow">
-        <CardTitle className="text-2xl font-semibold mb-2 text-primary-foreground">{product.name}</CardTitle>
+        <CardTitle className="text-2xl font-semibold mb-2 text-foreground">{product.name}</CardTitle>
         <CardDescription className="text-muted-foreground mb-3">{product.description}</CardDescription>
         <p className="text-xl font-bold text-accent-foreground">{product.price}</p>
       </CardContent>

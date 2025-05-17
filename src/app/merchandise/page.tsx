@@ -6,7 +6,7 @@ export default function MerchandisePage() {
   return (
     <div className="space-y-8">
       <section className="text-center py-8">
-        <h1 className="text-4xl font-bold mb-2 text-primary-foreground">Merchandising UtiliLab</h1>
+        <h1 className="text-4xl font-bold mb-2 text-foreground">Merchandising UtiliLab</h1>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto">
           Encuentra productos únicos para expresar tu aprecio por la ética utilitarista.
         </p>
