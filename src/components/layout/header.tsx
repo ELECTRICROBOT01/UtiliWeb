@@ -11,10 +11,10 @@ export default function Header() {
           <span>UtiliLab</span>
         </Link>
         <nav className="space-x-2 sm:space-x-4">
-          <Button variant="outline" asChild className="shadow-md border-foreground rounded-full">
+          <Button variant="outline" asChild className="shadow-md border-foreground rounded-lg">
             <Link href="/">Inicio</Link>
           </Button>
-          <Button variant="outline" asChild className="shadow-md border-foreground rounded-full">
+          <Button variant="outline" asChild className="shadow-md border-foreground rounded-lg">
             <Link href="/merchandise">Merchandising</Link>
           </Button>
         </nav>
