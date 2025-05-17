@@ -8,33 +8,33 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 94%; /* Light Gray #F0F0F0 */
-    --foreground: 0 0% 10%; /* Dark Gray for text */
+    --background: 220 20% 97%; /* Muy claro, casi blanco con un toque azulado (#F5F7FA) */
+    --foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
 
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 0 0% 10%;
+    --card: 0 0% 100%; /* Blanco (#FFFFFF) */
+    --card-foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 0 0% 100%; /* Blanco (#FFFFFF) */
+    --popover-foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
 
-    --primary: 240 67% 94%; /* Soft Lavender #E6E6FA */
-    --primary-foreground: 240 25% 30%; /* Dark Lavender/Blue text for contrast */
+    --primary: 210 70% 55%; /* Azul vibrante (#4A90E2) */
+    --primary-foreground: 0 0% 100%; /* Blanco (#FFFFFF) */
 
-    --secondary: 0 0% 88%; /* Slightly darker gray than background */
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+    --secondary-foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
 
-    --muted: 0 0% 80%;
-    --muted-foreground: 0 0% 45.1%; /* Default muted foreground */
+    --muted: 220 15% 75%; /* Gris medio azulado (#B4BCCD) */
+    --muted-foreground: 220 10% 50%; /* Gris azulado (#747C8C) */
 
-    --accent: 120 60% 92%; /* Pale Green #E0F8E0 */
-    --accent-foreground: 120 30% 25%; /* Dark Green text for contrast */
+    --accent: 35 90% 60%; /* Naranja (#FFA84D) */
+    --accent-foreground: 20 100% 15%; /* Marrón oscuro para contraste (#4D2600) */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 85%;
-    --input: 0 0% 88%; /* Matched to secondary for cohesion */
-    --ring: 240 50% 70%; /* A lavender ring, visible on light backgrounds */
+    --border: 220 10% 88%; /* Gris claro (#DDE1E6) */
+    --input: 220 10% 92%; /* Gris muy claro, similar a secondary (#E8EBF0) */
+    --ring: 210 70% 55%; /* Azul primario (#4A90E2) */
 
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -44,52 +44,61 @@ body {
     --radius: 0.5rem;
 
     /* Retain sidebar variables from original globals.css for completeness, though not actively used in this design */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 220 15% 98%; /* Adaptado ligeramente */
+    --sidebar-foreground: 220 15% 30%; /* Adaptado ligeramente */
+    --sidebar-primary: 210 70% 55%; /* Azul primario */
+    --sidebar-primary-foreground: 0 0% 100%; /* Blanco */
+    --sidebar-accent: 220 15% 95%; /* Muy claro */
+    --sidebar-accent-foreground: 220 15% 25%; /* Gris oscuro azulado */
+    --sidebar-border: 220 10% 88%; /* Gris claro */
+    --sidebar-ring: 210 70% 55%; /* Azul primario */
   }
 
   .dark {
-    /* Default dark mode, can be customized further if needed */
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    /* Dark mode - ajustado para complementar la nueva paleta light */
+    --background: 220 15% 10%; /* Azul muy oscuro (#14171C) */
+    --foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+
+    --card: 220 15% 15%; /* Azul oscuro (#1E222B) */
+    --card-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+
+    --popover: 220 15% 15%; /* Azul oscuro (#1E222B) */
+    --popover-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+
+    --primary: 210 70% 60%; /* Azul (#5E9BE4) - ligeramente más claro para dark mode */
+    --primary-foreground: 220 15% 10%; /* Azul muy oscuro (#14171C) */
+
+    --secondary: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
+    --secondary-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+
+    --muted: 220 15% 30%; /* Gris azulado oscuro (#414859) */
+    --muted-foreground: 220 10% 65%; /* Gris azulado medio (#98A0B0) */
+
+    --accent: 35 80% 65%; /* Naranja (#FFB766) - ligeramente más claro para dark mode */
+    --accent-foreground: 20 100% 10%; /* Marrón muy oscuro (#331A00) */
+
+    --destructive: 0 70% 55%; /* Rojo (#E04D4D) */
+    --destructive-foreground: 0 0% 98%; /* Casi blanco */
+
+    --border: 220 15% 30%; /* Gris azulado oscuro (#414859) */
+    --input: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
+    --ring: 210 70% 60%; /* Azul (#5E9BE4) */
+    
+    --chart-1: 12 70% 65%;
+    --chart-2: 173 50% 45%;
+    --chart-3: 197 30% 30%;
+    --chart-4: 43 70% 70%;
+    --chart-5: 27 80% 70%;
     
     /* Dark Sidebar colors */
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 220 15% 12%; /* Azul muy oscuro (#181C23) */
+    --sidebar-foreground: 220 15% 85%; /* Gris claro azulado (#D0D5DE) */
+    --sidebar-primary: 210 70% 60%; /* Azul (#5E9BE4) */
+    --sidebar-primary-foreground: 220 15% 10%; /* Azul muy oscuro (#14171C) */
+    --sidebar-accent: 220 15% 20%; /* Azul oscuro (#2A303C) */
+    --sidebar-accent-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+    --sidebar-border: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
+    --sidebar-ring: 210 70% 60%; /* Azul (#5E9BE4) */
   }
 }
 
