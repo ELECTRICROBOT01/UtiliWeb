@@ -97,6 +97,20 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="max-w-4xl mx-auto space-y-8 py-12">
+        <h2 className="text-4xl font-bold text-center text-primary-foreground mb-8">Explora el Utilitarismo Visualmente</h2>
+        <div style={{position: 'relative', width: '100%', height: '0', paddingTop: '70.7071%', paddingBottom: '0', boxShadow: '0 2px 8px 0 rgba(63,69,81,0.16)', marginTop: '1.6em', marginBottom: '0.9em', overflow: 'hidden', borderRadius: '8px', willChange: 'transform'}}>
+          <iframe loading="lazy" style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', padding: '0', margin: '0'}}
+            src="https://www.canva.com/design/DAGnCNiuGOM/GttA6FKVQJuvvcu_6KUb-Q/view?embed" allowFullScreen={true} allow="fullscreen">
+          </iframe>
+        </div>
+        <p className="text-center text-sm text-muted-foreground">
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGnCNiuGOM&#x2F;GttA6FKVQJuvvcu_6KUb-Q&#x2F;view?utm_content=DAGnCNiuGOM&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener" className="hover:underline">
+            Tríptico sobre Utilitarismo
+          </a> por Diego Gomez en Canva.
+        </p>
+      </section>
+
       <section className="text-center py-12">
         <h2 className="text-3xl font-bold mb-6 text-primary-foreground">Explora Nuestro Merchandising</h2>
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
