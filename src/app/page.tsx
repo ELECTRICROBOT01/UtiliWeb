@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function HomePage() {
   return (
     <div className="space-y-12">
-      <section className="text-center py-12 bg-primary/20 rounded-lg shadow-md">
+      <section className="text-center py-12 bg-accent/10 rounded-lg shadow-md">
         <h1 className="text-5xl font-bold mb-4 text-foreground">Bienvenido a UtiliLab</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Explorando el Utilitarismo: La búsqueda de la mayor felicidad para el mayor número.
@@ -28,7 +28,7 @@ export default function HomePage() {
         <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
           <CardHeader>
             <CardTitle className="text-3xl font-semibold text-foreground flex items-center">
-              <Lightbulb className="mr-3 h-8 w-8 text-accent-foreground" />
+              <Lightbulb className="mr-3 h-8 w-8 text-accent" />
               ¿Qué es el Utilitarismo?
             </CardTitle>
           </CardHeader>
@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
-              <Users className="h-12 w-12 mx-auto text-accent-foreground mb-2" />
+              <Users className="h-12 w-12 mx-auto text-accent mb-2" />
               <CardTitle className="text-2xl text-foreground">Mayor Felicidad</CardTitle>
             </CardHeader>
             <CardContent className="text-foreground/80">
@@ -57,7 +57,7 @@ export default function HomePage() {
           </Card>
           <Card className="text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
-              <Scale className="h-12 w-12 mx-auto text-accent-foreground mb-2" />
+              <Scale className="h-12 w-12 mx-auto text-accent mb-2" />
               <CardTitle className="text-2xl text-foreground">Consecuencialismo</CardTitle>
             </CardHeader>
             <CardContent className="text-foreground/80">
@@ -67,7 +67,7 @@ export default function HomePage() {
           <Card className="text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
               {/* Using a generic icon for impartiality */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto text-accent-foreground mb-2 lucide lucide-landmark"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mx-auto text-accent mb-2 lucide lucide-landmark"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
               <CardTitle className="text-2xl text-foreground">Imparcialidad</CardTitle>
             </CardHeader>
             <CardContent className="text-foreground/80">
