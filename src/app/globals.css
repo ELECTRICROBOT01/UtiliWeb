@@ -17,7 +17,7 @@ body {
     --popover: 0 0% 100%; /* White */
     --popover-foreground: 222 47% 11.2%; /* Dark Blue-Gray Text */
 
-    --primary: 221 83% 53%; /* Classic Blue */
+    --primary: 221 83% 65%; /* Lighter Classic Blue */
     --primary-foreground: 0 0% 98%; /* Light Text on Primary */
 
     --secondary: 210 40% 96.1%; /* Very Light Blue-Gray */
@@ -34,10 +34,10 @@ body {
 
     --border: 214 32% 91.4%; /* Light Gray Border */
     --input: 214 32% 91.4%; /* Light Gray Input BG */
-    --ring: 221 83% 53%; /* Classic Blue Ring */
+    --ring: 221 83% 53%; /* Classic Blue Ring (original primary for ring) */
 
-    --chart-1: 221 83% 53%; /* Primary */
-    --chart-2: 170 70% 40%; /* Accent */
+    --chart-1: 221 83% 65%; /* Primary (Lighter Classic Blue) */
+    --chart-2: 170 70% 40%; /* Accent (Teal) */
     --chart-3: 210 40% 56.1%; /* Muted version of secondary */
     --chart-4: 0 84% 60%;   /* Destructive */
     --chart-5: 215 20% 65.1%; /* Muted foreground */
