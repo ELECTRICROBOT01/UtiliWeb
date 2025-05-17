@@ -8,33 +8,33 @@ body {
 
 @layer base {
   :root {
-    --background: 220 20% 97%; /* Muy claro, casi blanco con un toque azulado (#F5F7FA) */
-    --foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
+    --background: 0 0% 94%; /* Light Gray (#F0F0F0) - PRD Background */
+    --foreground: 0 0% 25%; /* Dark Gray for text */
 
-    --card: 0 0% 100%; /* Blanco (#FFFFFF) */
-    --card-foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 25%; /* Dark Gray */
 
-    --popover: 0 0% 100%; /* Blanco (#FFFFFF) */
-    --popover-foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 25%; /* Dark Gray */
 
-    --primary: 210 70% 55%; /* Azul vibrante (#4A90E2) */
-    --primary-foreground: 0 0% 100%; /* Blanco (#FFFFFF) */
+    --primary: 240 67% 94%; /* Soft Lavender (#E6E6FA) - PRD Primary */
+    --primary-foreground: 240 25% 30%; /* Darker lavender/gray for text on soft lavender */
 
-    --secondary: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
-    --secondary-foreground: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
+    --secondary: 240 30% 96%; /* Very light, slightly desaturated lavender for secondary backgrounds */
+    --secondary-foreground: 240 20% 40%; /* Medium-Dark Lavender-Gray */
 
-    --muted: 220 15% 75%; /* Gris medio azulado (#B4BCCD) */
-    --muted-foreground: 220 10% 50%; /* Gris azulado (#747C8C) */
+    --muted: 0 0% 85%; /* A lighter gray for muted text or elements */
+    --muted-foreground: 0 0% 50%; /* A medium gray for muted text */
 
-    --accent: 35 90% 60%; /* Naranja (#FFA84D) */
-    --accent-foreground: 20 100% 15%; /* Marrón oscuro para contraste (#4D2600) */
+    --accent: 130 55% 80%; /* Pale Green (#C1EAC1) - PRD Accent (adjusted for usability) */
+    --accent-foreground: 130 30% 25%; /* Dark Green/Gray for text on pale green */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 10% 88%; /* Gris claro (#DDE1E6) */
-    --input: 220 10% 92%; /* Gris muy claro, similar a secondary (#E8EBF0) */
-    --ring: 210 70% 55%; /* Azul primario (#4A90E2) */
+    --border: 0 0% 88%; /* Gray for borders */
+    --input: 0 0% 92%; /* Light Gray for input backgrounds */
+    --ring: 130 55% 70%; /* Pale Green for focus rings */
 
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -43,46 +43,44 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
-    /* Retain sidebar variables from original globals.css for completeness, though not actively used in this design */
-    --sidebar-background: 220 15% 98%; /* Adaptado ligeramente */
-    --sidebar-foreground: 220 15% 30%; /* Adaptado ligeramente */
-    --sidebar-primary: 210 70% 55%; /* Azul primario */
-    --sidebar-primary-foreground: 0 0% 100%; /* Blanco */
-    --sidebar-accent: 220 15% 95%; /* Muy claro */
-    --sidebar-accent-foreground: 220 15% 25%; /* Gris oscuro azulado */
-    --sidebar-border: 220 10% 88%; /* Gris claro */
-    --sidebar-ring: 210 70% 55%; /* Azul primario */
+    --sidebar-background: 240 30% 97%; /* Light Lavender variant for sidebar */
+    --sidebar-foreground: 240 20% 30%; /* Darker Lavender for sidebar text */
+    --sidebar-primary: 130 55% 75%; /* Pale Green for sidebar primary actions */
+    --sidebar-primary-foreground: 130 30% 20%; /* Dark Green for text on pale green */
+    --sidebar-accent: 240 50% 90%; /* Lighter Lavender for sidebar accent */
+    --sidebar-accent-foreground: 240 20% 25%; /* Dark Lavender for text on sidebar accent */
+    --sidebar-border: 240 20% 85%; /* Lavender-tinged border */
+    --sidebar-ring: 130 55% 65%; /* Pale Green ring */
   }
 
   .dark {
-    /* Dark mode - ajustado para complementar la nueva paleta light */
-    --background: 220 15% 10%; /* Azul muy oscuro (#14171C) */
-    --foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+    --background: 240 10% 12%; /* Dark Lavender-Gray */
+    --foreground: 0 0% 90%; /* Off-white */
 
-    --card: 220 15% 15%; /* Azul oscuro (#1E222B) */
-    --card-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+    --card: 240 10% 18%; /* Darker Lavender-Gray */
+    --card-foreground: 0 0% 90%; /* Off-white */
 
-    --popover: 220 15% 15%; /* Azul oscuro (#1E222B) */
-    --popover-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+    --popover: 240 10% 18%; /* Darker Lavender-Gray */
+    --popover-foreground: 0 0% 90%; /* Off-white */
 
-    --primary: 210 70% 60%; /* Azul (#5E9BE4) - ligeramente más claro para dark mode */
-    --primary-foreground: 220 15% 10%; /* Azul muy oscuro (#14171C) */
+    --primary: 240 50% 35%; /* Darker Soft Lavender */
+    --primary-foreground: 240 60% 92%; /* Light Lavender */
 
-    --secondary: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
-    --secondary-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
+    --secondary: 240 15% 28%; /* Dark Lavender-Gray for secondary elements */
+    --secondary-foreground: 0 0% 85%; /* Light Gray/Off-white */
 
-    --muted: 220 15% 30%; /* Gris azulado oscuro (#414859) */
-    --muted-foreground: 220 10% 65%; /* Gris azulado medio (#98A0B0) */
+    --muted: 240 10% 35%; /* Medium-Dark Lavender-Gray */
+    --muted-foreground: 0 0% 65%; /* Medium Gray */
 
-    --accent: 35 80% 65%; /* Naranja (#FFB766) - ligeramente más claro para dark mode */
-    --accent-foreground: 20 100% 10%; /* Marrón muy oscuro (#331A00) */
+    --accent: 130 50% 60%; /* Visible Pale Green on dark */
+    --accent-foreground: 130 25% 95%; /* Very Light Green/Almost White */
 
-    --destructive: 0 70% 55%; /* Rojo (#E04D4D) */
-    --destructive-foreground: 0 0% 98%; /* Casi blanco */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 30%; /* Gris azulado oscuro (#414859) */
-    --input: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
-    --ring: 210 70% 60%; /* Azul (#5E9BE4) */
+    --border: 240 10% 30%; /* Dark Lavender-Gray border */
+    --input: 240 10% 25%; /* Dark Lavender-Gray input background */
+    --ring: 130 50% 50%; /* Darker Pale Green ring */
     
     --chart-1: 12 70% 65%;
     --chart-2: 173 50% 45%;
@@ -90,15 +88,14 @@ body {
     --chart-4: 43 70% 70%;
     --chart-5: 27 80% 70%;
     
-    /* Dark Sidebar colors */
-    --sidebar-background: 220 15% 12%; /* Azul muy oscuro (#181C23) */
-    --sidebar-foreground: 220 15% 85%; /* Gris claro azulado (#D0D5DE) */
-    --sidebar-primary: 210 70% 60%; /* Azul (#5E9BE4) */
-    --sidebar-primary-foreground: 220 15% 10%; /* Azul muy oscuro (#14171C) */
-    --sidebar-accent: 220 15% 20%; /* Azul oscuro (#2A303C) */
-    --sidebar-accent-foreground: 220 15% 90%; /* Gris claro azulado (#E1E5EB) */
-    --sidebar-border: 220 15% 25%; /* Gris oscuro azulado (#363C4A) */
-    --sidebar-ring: 210 70% 60%; /* Azul (#5E9BE4) */
+    --sidebar-background: 240 10% 15%; /* Dark Lavender for dark sidebar */
+    --sidebar-foreground: 240 40% 85%; /* Light Lavender text for dark sidebar */
+    --sidebar-primary: 130 50% 65%; /* Pale Green for dark sidebar primary actions */
+    --sidebar-primary-foreground: 130 40% 95%; /* Very Light Green text */
+    --sidebar-accent: 240 15% 25%; /* Darker Lavender for dark sidebar accent */
+    --sidebar-accent-foreground: 240 40% 90%; /* Light Lavender text */
+    --sidebar-border: 240 10% 25%; /* Dark Lavender border */
+    --sidebar-ring: 130 50% 55%; /* Pale Green ring */
   }
 }
 

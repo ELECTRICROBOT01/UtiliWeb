@@ -30,7 +30,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <p className="text-xl font-bold text-accent-foreground">{product.price}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+        <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
           <Link href={`/merchandise/${product.id}`}>
             Ver Detalles <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
