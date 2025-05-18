@@ -1,6 +1,6 @@
 {
   "name": "nextn",
-  "homepage": "https://github.com/ELECTRICROBOT01/UtiliWeb",
+  "homepage": "https://electricrobot01.github.io/UtiliWeb/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d out",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
