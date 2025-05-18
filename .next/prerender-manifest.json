@@ -54,6 +54,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/merchandise/camiseta-consecuencialista": {
       "experimentalBypassFor": [
         {
@@ -149,30 +173,6 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {
@@ -204,8 +204,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "352c0d71218ad7b7e68af572072a90b1",
-    "previewModeSigningKey": "cd930651d011843fe50c79b86afc2e1fdddbb355244734f818bc3316cc2d1a75",
-    "previewModeEncryptionKey": "8fcf4c2925f68b09a4c3dd19e2e478aec455e30db2b651d8febbb3367fbec25d"
+    "previewModeId": "4b7ea353605e0e47d25f73309a12d797",
+    "previewModeSigningKey": "20d1ef15588aae7c63265c449621bf56b16ad76ff7f6a9087295c4102fbfe605",
+    "previewModeEncryptionKey": "85dedc855c027205fd0ec0aab379a9c5d5e5443ffb9d9c7c2d63d50506ac2bcd"
   }
 }
