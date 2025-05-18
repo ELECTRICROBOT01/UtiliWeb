@@ -2,6 +2,6 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/merchandise/[productId]/page": "app/merchandise/[productId]/page.js",
-  "/merchandise/page": "app/merchandise/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/merchandise/page": "app/merchandise/page.js"
 }

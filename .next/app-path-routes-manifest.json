@@ -2,6 +2,6 @@
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
   "/merchandise/[productId]/page": "/merchandise/[productId]",
-  "/merchandise/page": "/merchandise",
-  "/page": "/"
+  "/page": "/",
+  "/merchandise/page": "/merchandise"
 }
