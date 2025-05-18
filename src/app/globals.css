@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; /* Almost White */
+    --foreground: 222 47% 11.2%; /* Dark Blue-Gray Text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222 47% 11.2%; /* Dark Blue-Gray Text */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222 47% 11.2%; /* Dark Blue-Gray Text */
+
+    --primary: 221 83% 65%; /* Lighter Classic Blue */
+    --primary-foreground: 0 0% 98%; /* Light Text on Primary */
+
+    --secondary: 210 40% 96.1%; /* Very Light Blue-Gray */
+    --secondary-foreground: 222 47% 11.2%; /* Dark Text on Secondary */
+
+    --muted: 210 40% 96.1%; /* Very Light Blue-Gray */
+    --muted-foreground: 215 20% 65.1%; /* Lighter Muted Text */
+
+    --accent: 170 70% 40%; /* Teal */
+    --accent-foreground: 0 0% 98%; /* Light Text on Accent */
+
+    --destructive: 0 84% 60%; /* Standard Red */
+    --destructive-foreground: 0 0% 98%; /* Light Text on Destructive */
+
+    --border: 214 32% 91.4%; /* Light Gray Border */
+    --input: 214 32% 91.4%; /* Light Gray Input BG */
+    --ring: 221 83% 53%; /* Classic Blue Ring (original primary for ring) */
+
+    --chart-1: 221 83% 65%; /* Primary (Lighter Classic Blue) */
+    --chart-2: 170 70% 40%; /* Accent (Teal) */
+    --chart-3: 210 40% 56.1%; /* Muted version of secondary */
+    --chart-4: 0 84% 60%;   /* Destructive */
+    --chart-5: 215 20% 65.1%; /* Muted foreground */
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 40% 97%; /* Slightly darker light blue-gray for sidebar */
+    --sidebar-foreground: 222 47% 11.2%; /* Dark text for sidebar */
+    --sidebar-primary: 170 70% 40%; /* Accent Teal for sidebar primary actions */
+    --sidebar-primary-foreground: 0 0% 98%; /* Light text on sidebar primary */
+    --sidebar-accent: 210 40% 92%; /* Lighter blue-gray for sidebar accent */
+    --sidebar-accent-foreground: 222 47% 11.2%; /* Dark text on sidebar accent */
+    --sidebar-border: 214 32% 88%; /* Slightly darker border for sidebar */
+    --sidebar-ring: 170 70% 40%; /* Accent Teal ring for sidebar */
+  }
+
+  .dark {
+    --background: 222 47% 11.2%; /* Dark Blue-Gray */
+    --foreground: 0 0% 98%; /* Light Text */
+
+    --card: 222 47% 11.2%; /* Dark Blue-Gray */
+    --card-foreground: 0 0% 98%; /* Light Text */
+
+    --popover: 222 47% 11.2%; /* Dark Blue-Gray */
+    --popover-foreground: 0 0% 98%; /* Light Text */
+
+    --primary: 217 91% 60.2%; /* Brighter Blue for Dark Mode */
+    --primary-foreground: 222 47% 11.2%; /* Darker Text on Primary */
+
+    --secondary: 217 33% 17.3%; /* Darker Muted Blue */
+    --secondary-foreground: 0 0% 98%; /* Light Text on Secondary */
+
+    --muted: 217 33% 17.3%; /* Darker Muted Blue */
+    --muted-foreground: 215 20% 65.1%; /* Lighter Muted Text */
+
+    --accent: 170 70% 50%; /* Brighter Teal for Dark Mode */
+    --accent-foreground: 222 47% 11.2%; /* Dark Text on Accent */
+
+    --destructive: 0 63% 40%; /* Darker Red */
+    --destructive-foreground: 0 0% 98%; /* Light Text */
+
+    --border: 217 33% 22.3%; /* Darker Border */
+    --input: 217 33% 22.3%; /* Darker Input BG */
+    --ring: 217 91% 60.2%; /* Brighter Blue Ring */
+    
+    --chart-1: 217 91% 60.2%; /* Primary Dark */
+    --chart-2: 170 70% 50%; /* Accent Dark */
+    --chart-3: 217 33% 37.3%; /* Muted version of secondary dark */
+    --chart-4: 0 70% 50%;   /* Destructive Dark */
+    --chart-5: 215 20% 55.1%; /* Muted foreground dark */
+    
+    --sidebar-background: 222 47% 9.2%; /* Very dark blue-gray for dark sidebar */
+    --sidebar-foreground: 0 0% 98%; /* Light text for dark sidebar */
+    --sidebar-primary: 170 70% 50%; /* Brighter Teal for dark sidebar primary */
+    --sidebar-primary-foreground: 222 47% 11.2%; /* Dark text on dark sidebar primary */
+    --sidebar-accent: 222 47% 15.2%; /* Slightly lighter dark blue-gray for dark sidebar accent */
+    --sidebar-accent-foreground: 0 0% 98%; /* Light text on dark sidebar accent */
+    --sidebar-border: 217 33% 17.3%; /* Darker border for dark sidebar */
+    --sidebar-ring: 170 70% 50%; /* Brighter Teal ring for dark sidebar */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Ensure transitions are smooth */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
