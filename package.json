@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out --dotfiles",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
