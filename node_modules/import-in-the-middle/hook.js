@@ -14,6 +14,7 @@ const EXTENSION_RE = /\.(js|mjs|cjs|ts|mts|cts)$/
 const NODE_VERSION = process.versions.node.split('.')
 const NODE_MAJOR = Number(NODE_VERSION[0])
 const NODE_MINOR = Number(NODE_VERSION[1])
+const HANDLED_FORMATS = new Set(['builtin', 'module', 'commonjs'])
 
 let entrypoint
 
@@ -347,6 +348,10 @@ function createHook (meta) {
       }
 
       return each === specifier || each === result.url || (result.url.startsWith('file:') && each === fileURLToPath(result.url))
+    }
+
+    if (result.format && !HANDLED_FORMATS.has(result.format)) {
+      return result
     }
 
     if (includeModules && !includeModules.some(match)) {
