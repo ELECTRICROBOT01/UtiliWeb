@@ -54,30 +54,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/merchandise/camiseta-consecuencialista": {
       "experimentalBypassFor": [
         {
@@ -173,6 +149,30 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {
@@ -204,8 +204,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "cc8998e1efd7aea853a5ca1455781432",
-    "previewModeSigningKey": "1e3b0645e42de275c42458edf83a534df47bd1a3c363ecc3ab1abe15a358f210",
-    "previewModeEncryptionKey": "749ffe139ed9283c3f0e852e403d5ff75e611f3e7710cf2b7c5a9b250b453fcb"
+    "previewModeId": "352c0d71218ad7b7e68af572072a90b1",
+    "previewModeSigningKey": "cd930651d011843fe50c79b86afc2e1fdddbb355244734f818bc3316cc2d1a75",
+    "previewModeEncryptionKey": "8fcf4c2925f68b09a4c3dd19e2e478aec455e30db2b651d8febbb3367fbec25d"
   }
 }
