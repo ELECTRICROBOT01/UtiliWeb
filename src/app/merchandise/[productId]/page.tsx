@@ -1,12 +1,21 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getProductById, type Product } from '@/lib/products';
+import { getProductById, getAllProductIds, type Product } from '@/lib/products'; // Añadido getAllProductIds
 import ProductDetailsClient from '@/components/merchandise/product-details-client';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
+
+// Función para obtener todos los productIds (esto puede ser desde un archivo, base de datos, etc.)
+export async function generateStaticParams() {
+  const productIds = getAllProductIds(); // Asegúrate de que esta función devuelva una lista de IDs de productos
+
+  return productIds.map((id) => ({
+    productId: id.toString(), // Pasamos los IDs como string
+  }));
+}
 
 interface ProductPageProps {
   params: {
@@ -31,7 +40,7 @@ export default function ProductPage({ params }: ProductPageProps) {
   const product = getProductById(params.productId);
 
   if (!product) {
-    notFound();
+    notFound(); // Si no se encuentra el producto, mostramos un error 404
   }
 
   return (

@@ -9,7 +9,10 @@ export interface Product {
   category: 'Camiseta' | 'Taza' | 'Sudadera';
   aiHint: string;
 }
-
+// En lib/products.ts
+export const getAllProductIds = (): string[] => {
+  return products.map(product => product.id); // Extraemos solo los IDs
+};
 export const products: Product[] = [
   {
     id: 'camiseta-el-mayor-bien',
