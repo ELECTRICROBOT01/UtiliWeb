@@ -217,6 +217,9 @@
 html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
     -moz-tab-size: 4;
     tab-size: 4;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -1115,6 +1118,7 @@ body {
 }
 
 .select-none {
+    -webkit-user-select: none;
     user-select: none
 }
 
