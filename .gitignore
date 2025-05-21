@@ -2,3 +2,10 @@
 
 # dependencies
 /node_modules/
+node_modules/
+# build
+/dist/
+# local env files
+.env
+# log files
+*.log
