@@ -558,6 +558,9 @@ body {
     }
 }
 
+.price-black {
+    color: #111 !important;
+}
 .sr-only {
     position: absolute;
     width: 1px;
