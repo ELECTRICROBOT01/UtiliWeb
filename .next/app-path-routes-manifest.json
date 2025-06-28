@@ -1,7 +1,14 @@
 {
+<<<<<<< HEAD
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
   "/merchandise/page": "/merchandise",
+=======
+  "/favicon.ico/route": "/favicon.ico",
+  "/_not-found/page": "/_not-found",
+  "/merchandise/page": "/merchandise",
+  "/page": "/",
+>>>>>>> 3e7a2ccafd5ad97c23937e5152d8ba9f16b4b6fc
   "/merchandise/[productId]/page": "/merchandise/[productId]"
 }

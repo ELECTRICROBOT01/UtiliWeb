@@ -1,6 +1,19 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+<<<<<<< HEAD
 /node_modules/@next
 
 
+=======
+/node_modules/
+node_modules/
+
+# build
+/dist/
+# local env files
+.env
+# log files
+*.log
+node_modules
+>>>>>>> 3e7a2ccafd5ad97c23937e5152d8ba9f16b4b6fc

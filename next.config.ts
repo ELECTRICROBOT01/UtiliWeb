@@ -3,6 +3,10 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   output: 'export',
   /* config options here */
+<<<<<<< HEAD
+=======
+  trailingSlash: true,
+>>>>>>> 3e7a2ccafd5ad97c23937e5152d8ba9f16b4b6fc
   typescript: {
     ignoreBuildErrors: true,
   },

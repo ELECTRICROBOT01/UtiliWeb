@@ -1,7 +1,14 @@
 {
+<<<<<<< HEAD
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/merchandise/page": "app/merchandise/page.js",
+=======
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/merchandise/page": "app/merchandise/page.js",
+  "/page": "app/page.js",
+>>>>>>> 3e7a2ccafd5ad97c23937e5152d8ba9f16b4b6fc
   "/merchandise/[productId]/page": "app/merchandise/[productId]/page.js"
 }
